@@ -1,0 +1,122 @@
+[{
+  "_id": "DESP-GENERAL",
+  "tipo_entidad": "despachos_logistica",
+  "empresa": "TextilPro S.A.S.",
+  "fecha_actualizacion": "2026-11-12",
+  "bodega_origen_default": "BOD-003",
+  "total_despachos_activos": 4,
+  "despachos_registrados": [
+    {
+      "codigo_despacho": "DESP-001",
+      "id_pedido": "PED-001",
+      "numero_orden": "ORD-2026-001",
+      "cliente": {
+        "codigo_cliente": "CLI-001",
+        "razon_social": "Modas y Estilos S.A.",
+        "destino_ciudad": "Bogotá",
+        "direccion_entrega": "Av. Las Industrias 452, Bogotá"
+      },
+      "logistica_transporte": {
+        "transportadora": "Servientrega Corporativo",
+        "numero_guia": "SRV-99482011",
+        "tipo_envio": "Terrestre Nacional",
+        "peso_total_kg": 57.8,
+        "cantidad_cajas": 6
+      },
+      "fechas": {
+        "fecha_despacho": "2026-03-08",
+        "fecha_entrega_estimada": "2026-03-10",
+        "fecha_entrega_real": "2026-03-09"
+      },
+      "responsable_despacho": {
+        "numero_empleado": "EMP-101",
+        "nombre_completo": "Carlos Pérez"
+      },
+      "estado_envio": "Entregado"
+    },
+    {
+      "codigo_despacho": "DESP-002",
+      "id_pedido": "PED-003",
+      "numero_orden": "ORD-2026-003",
+      "cliente": {
+        "codigo_cliente": "CLI-003",
+        "razon_social": "Confecciones e Importaciones del Pacífico S.A.C.",
+        "destino_ciudad": "Santiago de Chile",
+        "direccion_entrega": "Calle Los Pinos 340, Santiago de Chile"
+      },
+      "logistica_transporte": {
+        "transportadora": "DHL Global Forwarding",
+        "numero_guia": "DHL-774120985",
+        "tipo_envio": "Aéreo Internacional",
+        "peso_total_kg": 118,
+        "cantidad_cajas": 12
+      },
+      "fechas": {
+        "fecha_despacho": "2026-03-14",
+        "fecha_entrega_estimada": "2026-03-18",
+        "fecha_entrega_real": null
+      },
+      "responsable_despacho": {
+        "numero_empleado": "EMP-102",
+        "nombre_completo": "María Gómez"
+      },
+      "estado_envio": "En Tránsito Aduanero"
+    },
+    {
+      "codigo_despacho": "DESP-003",
+      "id_pedido": "PED-005",
+      "numero_orden": "ORD-2026-005",
+      "cliente": {
+        "codigo_cliente": "CLI-005",
+        "razon_social": "Global Retail Brands S.A.",
+        "destino_ciudad": "San Salvador",
+        "direccion_entrega": "Boulevard de los Héroes 1240, San Salvador"
+      },
+      "logistica_transporte": {
+        "transportadora": "FedEx Trade Networks",
+        "numero_guia": "FDX-558901234",
+        "tipo_envio": "Marítimo Consolidado",
+        "peso_total_kg": 143.5,
+        "cantidad_cajas": 15
+      },
+      "fechas": {
+        "fecha_despacho": "2026-03-19",
+        "fecha_entrega_estimada": "2026-03-25",
+        "fecha_entrega_real": null
+      },
+      "responsable_despacho": {
+        "numero_empleado": "EMP-101",
+        "nombre_completo": "Carlos Pérez"
+      },
+      "estado_envio": "Preparando en Bodega"
+    },
+    {
+      "codigo_despacho": "DESP-004",
+      "id_pedido": "PED-006",
+      "numero_orden": "ORD-2026-006",
+      "cliente": {
+        "codigo_cliente": "CLI-006",
+        "razon_social": "Comercializadora de Ropa Deportiva SportMaster",
+        "destino_ciudad": "Bogotá",
+        "direccion_entrega": "Carrera 15 # 93-40, Bogotá"
+      },
+      "logistica_transporte": {
+        "transportadora": "Coordinadora Mercantil",
+        "numero_guia": "CRD-33019284",
+        "tipo_envio": "Terrestre Express",
+        "peso_total_kg": 75,
+        "cantidad_cajas": 8
+      },
+      "fechas": {
+        "fecha_despacho": "2026-03-10",
+        "fecha_entrega_estimada": "2026-03-12",
+        "fecha_entrega_real": "2026-03-11"
+      },
+      "responsable_despacho": {
+        "numero_empleado": "EMP-104",
+        "nombre_completo": "Ana Torres"
+      },
+      "estado_envio": "Entregado"
+    }
+  ]
+}]

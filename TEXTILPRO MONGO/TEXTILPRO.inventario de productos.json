@@ -1,0 +1,82 @@
+[{
+  "_id": "INV-GENERAL",
+  "tipo_entidad": "inventario_productos",
+  "almacen_central": "Bodega Principal - Sector Textil",
+  "fecha_actualizacion": "2026-02-27",
+  "responsable_inventario": "María Gómez",
+  "stock_total_unidades": 4500,
+  "lotes_inventario": [
+    {
+      "id_producto": "PROD-001",
+      "codigo": "CAM-OXF-01",
+      "nombre": "Camisa Casual Oxford",
+      "color": "Blanco",
+      "talla_dimension": "M",
+      "cantidad_disponible": 350,
+      "ubicacion_almacen": "Pasillo A - Estante 03",
+      "lote_produccion": "LOT-CAM-2026-01",
+      "fecha_fabricacion": "2026-01-16",
+      "estado": "Disponible"
+    },
+    {
+      "id_producto": "PROD-001",
+      "codigo": "CAM-OXF-01",
+      "nombre": "Camisa Casual Oxford",
+      "color": "Celeste",
+      "talla_dimension": "L",
+      "cantidad_disponible": 280,
+      "ubicacion_almacen": "Pasillo A - Estante 04",
+      "lote_produccion": "LOT-CAM-2026-01",
+      "fecha_fabricacion": "2026-01-16",
+      "estado": "Disponible"
+    },
+    {
+      "id_producto": "PROD-002",
+      "codigo": "PAN-DEN-02",
+      "nombre": "Pantalón Jean Clásico",
+      "color": "Azul Indigo",
+      "talla_dimension": "32",
+      "cantidad_disponible": 500,
+      "ubicacion_almacen": "Pasillo B - Estante 01",
+      "lote_produccion": "LOT-PAN-2026-02",
+      "fecha_fabricacion": "2026-01-19",
+      "estado": "Disponible"
+    },
+    {
+      "id_producto": "PROD-003",
+      "codigo": "CHA-IMP-03",
+      "nombre": "Chaqueta Impermeable Outdoor",
+      "color": "Negro",
+      "talla_dimension": "M",
+      "cantidad_disponible": 150,
+      "ubicacion_almacen": "Pasillo C - Estante 02",
+      "lote_produccion": "LOT-CHA-2026-01",
+      "fecha_fabricacion": "2026-01-21",
+      "estado": "Disponible"
+    },
+    {
+      "id_producto": "PROD-004",
+      "codigo": "POL-ALGS-04",
+      "nombre": "Polo Deportivo Jersey",
+      "color": "Azul Rey",
+      "talla_dimension": "L",
+      "cantidad_disponible": 1200,
+      "ubicacion_almacen": "Pasillo D - Estante 05",
+      "lote_produccion": "LOT-POL-2026-03",
+      "fecha_fabricacion": "2026-01-23",
+      "estado": "Disponible"
+    },
+    {
+      "id_producto": "PROD-005",
+      "codigo": "VES-LIN-05",
+      "nombre": "Vestido Casual de Lino",
+      "color": "Beige Natural",
+      "talla_dimension": "S",
+      "cantidad_disponible": 220,
+      "ubicacion_almacen": "Pasillo E - Estante 02",
+      "lote_produccion": "LOT-VES-2026-01",
+      "fecha_fabricacion": "2026-02-21",
+      "estado": "Disponible"
+    }
+  ]
+}]

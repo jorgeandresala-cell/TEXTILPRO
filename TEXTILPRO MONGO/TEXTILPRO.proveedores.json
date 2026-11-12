@@ -1,0 +1,110 @@
+[{
+  "_id": "PROV-GENERAL",
+  "tipo_entidad": "proveedores",
+  "empresa": "TextilPro S.A.S.",
+  "fecha_actualizacion": "2026-11-12",
+  "total_proveedores": 4,
+  "proveedores_registrados": [
+    {
+      "codigo_proveedor": "PROV-001",
+      "razon_social": "Textiles del Norte S.A.",
+      "NIT": "900123456-1",
+      "tipo_insumo": "Tejidos Planos y Algodón Oxford",
+      "contacto": {
+        "nombre": "Claudia Morales",
+        "cargo": "Gerente de Cuentas B2B",
+        "telefono": "+57 4 444 1122",
+        "correo": "ventas@textilesdelnorte.com"
+      },
+      "ubicacion": {
+        "pais": "Colombia",
+        "ciudad": "Medellín",
+        "direccion": "Calle 30 # 55-20"
+      },
+      "condiciones_comerciales": {
+        "tiempo_entrega_dias": 5,
+        "metodo_pago": "Crédito a 30 días",
+        "calificacion_proveedor": 4.8
+      },
+      "materias_primas_asociadas": [
+        "MP-ALG-01",
+        "MP-GAB-01"
+      ]
+    },
+    {
+      "codigo_proveedor": "PROV-002",
+      "razon_social": "Denim Global Ltda.",
+      "NIT": "800987654-3",
+      "tipo_insumo": "Tejidos Denim y Pesados",
+      "contacto": {
+        "nombre": "Esteban Restrepo",
+        "cargo": "Director Comercial",
+        "telefono": "+57 2 555 7890",
+        "correo": "contacto@denimglobal.co"
+      },
+      "ubicacion": {
+        "pais": "Colombia",
+        "ciudad": "Cali",
+        "direccion": "Zona Franca del Pacífico, Bodega 12"
+      },
+      "condiciones_comerciales": {
+        "tiempo_entrega_dias": 7,
+        "metodo_pago": "Transferencia 50% anticipo, 50% contra entrega",
+        "calificacion_proveedor": 4.6
+      },
+      "materias_primas_asociadas": [
+        "MP-DEN-01"
+      ]
+    },
+    {
+      "codigo_proveedor": "PROV-003",
+      "razon_social": "YKK del Perú S.A.",
+      "NIT": "20100456789",
+      "tipo_insumo": "Avios, Cierres y Accesorios Metálicos",
+      "contacto": {
+        "nombre": "Kenji Takahashi",
+        "cargo": "Asesor de Ventas Industriales",
+        "telefono": "+51 1 241 8000",
+        "correo": "atencionalcliente@ykk.com.pe"
+      },
+      "ubicacion": {
+        "pais": "Perú",
+        "ciudad": "Lima",
+        "direccion": "Av. Industrial 540, Callao"
+      },
+      "condiciones_comerciales": {
+        "tiempo_entrega_dias": 10,
+        "metodo_pago": "Carta de crédito",
+        "calificacion_proveedor": 4.9
+      },
+      "materias_primas_asociadas": [
+        "MP-ZIP-01"
+      ]
+    },
+    {
+      "codigo_proveedor": "PROV-004",
+      "razon_social": "Impermex Tech S.A.C.",
+      "NIT": "20589632140",
+      "tipo_insumo": "Telas Sintéticas e Impermeables",
+      "contacto": {
+        "nombre": "Mariana Pardo",
+        "cargo": "Ejecutiva de Ventas Técnicas",
+        "telefono": "+502 2300 4500",
+        "correo": "ventas@impermextech.com"
+      },
+      "ubicacion": {
+        "pais": "Corea del Sur",
+        "ciudad": "Seúl",
+        "direccion": "Teheran-ro 108, Gangnam-gu"
+      },
+      "condiciones_comerciales": {
+        "tiempo_entrega_dias": 20,
+        "metodo_pago": "Pago anticipado 100%",
+        "calificacion_proveedor": 4.7
+      },
+      "materias_primas_asociadas": [
+        "MP-POL-02"
+      ]
+    }
+  ]
+}]

@@ -1,0 +1,68 @@
+[{
+  "_id": "LOTES-GENERAL",
+  "tipo_entidad": "control_lotes",
+  "empresa": "TextilPro S.A.S.",
+  "fecha_actualizacion": "2026-11-12",
+  "lotes_registrados": [
+    {
+      "codigo_lote": "LOT-2026-001",
+      "nombre_producto": "Camisa Casual Oxford",
+      "cantidad_unidades": 1250,
+      "material_principal": "Algodón Oxford",
+      "turno": "Mañana",
+      "estado_lote": "Terminado",
+      "porcentaje_desperdicio": 3.5,
+      "pruebas_resistencia": [
+        {
+          "tipo_prueba": "Tracción de costura",
+          "resultado_obtenido": 45,
+          "minimo_exigido": 40
+        }
+      ],
+      "pruebas_calidad": [
+        {
+          "id_prueba": "P-CAL-01",
+          "resultado": "Aprobado"
+        }
+      ]
+    },
+    {
+      "codigo_lote": "LOT-2026-002",
+      "nombre_producto": "Pantalón Denim Clásico",
+      "cantidad_unidades": 800,
+      "material_principal": "Lino",
+      "turno": "Tarde",
+      "estado_lote": "En Proceso",
+      "porcentaje_desperdicio": 8.2,
+      "pruebas_resistencia": [
+        {
+          "tipo_prueba": "Desgarro de tela",
+          "resultado_obtenido": 18.5,
+          "minimo_exigido": 25
+        }
+      ],
+      "pruebas_calidad": [
+        {
+          "id_prueba": "P-CAL-02",
+          "resultado": "Observado"
+        }
+      ]
+    },
+    {
+      "codigo_lote": "LOT-2026-003",
+      "nombre_producto": "Chaqueta Impermeable Outdoor",
+      "cantidad_unidades": 1500,
+      "material_principal": "Algodón Orgánico",
+      "turno": "Mañana",
+      "estado_lote": "Terminado",
+      "porcentaje_desperdicio": 1.2,
+      "pruebas_resistencia": [
+        {
+          "tipo_prueba": "Resistencia al agua",
+          "resultado_obtenido": 95,
+          "minimo_exigido": 90
+        }
+      ]
+    }
+  ]
+}]

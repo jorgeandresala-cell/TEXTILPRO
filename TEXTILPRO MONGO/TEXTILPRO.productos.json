@@ -1,0 +1,100 @@
+[{
+  "_id": "PROD-004",
+  "tipo_entidad": "producto",
+  "codigo": "POL-ALGS-04",
+  "nombre": "Polo Deportivo Jersey",
+  "categoria": "Deportivo",
+  "composicion": "100% Poliéster Dry-Fit",
+  "precio_objetivo": 18,
+  "fecha_creacion": "2026-01-22",
+  "detalles_fisicos": {
+    "peso_gramos": 150,
+    "dimensiones": "XS, S, M, L, XL",
+    "colores": [
+      "Azul Rey",
+      "Blanco",
+      "Amarillo Flúor"
+    ]
+  },
+  "observaciones_calidad": "Control de sublimación sin imperfecciones."
+},
+{
+  "_id": "PROD-003",
+  "tipo_entidad": "producto",
+  "codigo": "CHA-IMP-03",
+  "nombre": "Chaqueta Impermeable Outdoor",
+  "categoria": "Prendas Exteriores",
+  "composicion": "Poliéster con recubrimiento PU",
+  "precio_objetivo": 65,
+  "fecha_creacion": "2026-01-20",
+  "detalles_fisicos": {
+    "peso_gramos": 800,
+    "dimensiones": "S, M, L",
+    "colores": [
+      "Rojo",
+      "Verde Militar",
+      "Negro"
+    ]
+  },
+  "observaciones_calidad": "Test de columna de agua obligatorio."
+},
+{
+  "_id": "PROD-002",
+  "tipo_entidad": "producto",
+  "codigo": "PAN-DEN-02",
+  "nombre": "Pantalón Jean Clásico",
+  "categoria": "Indumentaria",
+  "composicion": "98% Algodón, 2% Elastano",
+  "precio_objetivo": 40,
+  "fecha_creacion": "2026-01-18",
+  "detalles_fisicos": {
+    "peso_gramos": 650,
+    "dimensiones": "30, 32, 34, 36",
+    "colores": [
+      "Azul Indigo",
+      "Negro Washed"
+    ]
+  },
+  "observaciones_calidad": "Prueba de resistencia en costuras de tiro."
+},
+{
+  "_id": "PROD-001",
+  "tipo_entidad": "producto",
+  "codigo": "CAM-OXF-01",
+  "nombre": "Camisa Casual Oxford",
+  "categoria": "Indumentaria",
+  "composicion": "100% Algodón Oxford",
+  "precio_objetivo": 25.5,
+  "fecha_creacion": "2026-01-15",
+  "detalles_fisicos": {
+    "peso_gramos": 220,
+    "dimensiones": "M, L, XL",
+    "colores": [
+      "Blanco",
+      "Celeste",
+      "Azul Marino"
+    ]
+  },
+  "observaciones_calidad": "Revision estricta de costuras en cuello y puños."
+},
+{
+  "_id": "PROD-005",
+  "tipo_entidad": "producto",
+  "codigo": "VES-LIN-05",
+  "nombre": "Vestido Casual de Lino",
+  "categoria": "Indumentaria Femenina de Lujo",
+  "composicion": "100% Lino Natural",
+  "precio_objetivo": 52.5,
+  "fecha_creacion": "2026-02-20",
+  "detalles_fisicos": {
+    "peso_gramos": 310,
+    "dimensiones": "S, M, L",
+    "colores": [
+      "Beige Natural",
+      "Blanco Hueso",
+      "Verde Oliva",
+      "Azul Acero"
+    ]
+  },
+  "observaciones_calidad": "Verificar tratamiento previo de encogimiento en tejido de lino."
+}]

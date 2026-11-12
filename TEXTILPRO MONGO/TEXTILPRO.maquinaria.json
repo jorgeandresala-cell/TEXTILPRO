@@ -1,0 +1,60 @@
+[{
+  "_id": "MAQ-002",
+  "tipo_entidad": "maquina",
+  "numero_serie": "maq-cos-01",
+  "tipo": "Máquina de Coser Plana de 1 Aguja",
+  "marca": "Brother",
+  "modelo": "S-7300A",
+  "anio_fabricacion": 2023,
+  "capacidad_produccion_hora": 85,
+  "ubicacion_planta": "Planta 1 - Costura",
+  "fecha_ultimo_mantenimiento": "2026-01-10"
+},
+{
+  "_id": "MAQ-001",
+  "tipo_entidad": "maquina",
+  "numero_serie": "maq-cort-01",
+  "tipo": "Cortadora Vertical",
+  "marca": "Eastman",
+  "modelo": "Blue Streak II",
+  "anio_fabricacion": 2022,
+  "capacidad_produccion_hora": 120,
+  "ubicacion_planta": "Planta 1 - Corte",
+  "fecha_ultimo_mantenimiento": "2026-01-05"
+},
+{
+  "_id": "MAQ-003",
+  "tipo_entidad": "maquina",
+  "numero_serie": "maq-rem-02",
+  "tipo": "Remalladora 5 Hilos de Alta Velocidad",
+  "marca": "Pegasus",
+  "modelo": "M900-538",
+  "anio_fabricacion": 2022,
+  "capacidad_produccion_hora": 95,
+  "ubicacion_planta": "Planta 1 - Costura",
+  "fecha_ultimo_mantenimiento": "2026-01-22"
+},
+{
+  "_id": "MAQ-004",
+  "tipo_entidad": "maquina",
+  "numero_serie": "maq-bor-01",
+  "tipo": "Bordadora Computarizada de 6 Cabezales",
+  "marca": "Tajima",
+  "modelo": "TFMX-C1506",
+  "anio_fabricacion": 2024,
+  "capacidad_produccion_hora": 50,
+  "ubicacion_planta": "Planta 2 - Estampado y Bordado",
+  "fecha_ultimo_mantenimiento": "2026-02-01"
+},
+{
+  "_id": "MAQ-005",
+  "tipo_entidad": "maquina",
+  "numero_serie": "maq-fus-01",
+  "tipo": "Fusionadora Continua de Entretelas",
+  "marca": "Hashima",
+  "modelo": "HP-600LS",
+  "anio_fabricacion": 2021,
+  "capacidad_produccion_hora": 110,
+  "ubicacion_planta": "Planta 3 - Preparación",
+  "fecha_ultimo_mantenimiento": "2026-01-18"
+}]

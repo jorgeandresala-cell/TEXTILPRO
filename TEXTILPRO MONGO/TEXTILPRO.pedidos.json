@@ -1,0 +1,165 @@
+[{
+  "_id": "PED-001",
+  "tipo_entidad": "pedido",
+  "numero_orden": "ORD-2026-001",
+  "fecha_emision": "2026-02-22",
+  "fecha_entrega_comprometida": "2026-03-10",
+  "prioridad": "Alta",
+  "estado_actual": "En Producción",
+  "cliente": {
+    "codigo_cliente": "CLI-001",
+    "razon_social": "Modas y Estilos S.A.",
+    "persona_contacto": "Ana María Rojas"
+  },
+  "detalle_productos": [
+    {
+      "id_producto": "PROD-001",
+      "codigo": "CAM-OXF-01",
+      "nombre": "Camisa Casual Oxford",
+      "cantidad": 150,
+      "precio_unitario": 25.5
+    },
+    {
+      "id_producto": "PROD-005",
+      "codigo": "VES-LIN-05",
+      "nombre": "Vestido Casual de Lino",
+      "cantidad": 80,
+      "precio_unitario": 48
+    }
+  ],
+  "total_pedido": 7665
+},
+{
+  "_id": "PED-002",
+  "tipo_entidad": "pedido",
+  "numero_orden": "ORD-2026-002",
+  "fecha_emision": "2026-02-23",
+  "fecha_entrega_comprometida": "2026-03-15",
+  "prioridad": "Media",
+  "estado_actual": "Pendiente",
+  "cliente": {
+    "codigo_cliente": "CLI-002",
+    "razon_social": "Comercializadora Textil Andina",
+    "persona_contacto": "Roberto Gómez"
+  },
+  "detalle_productos": [
+    {
+      "id_producto": "PROD-002",
+      "codigo": "PAN-DEN-02",
+      "nombre": "Pantalón Jean Clásico",
+      "cantidad": 200,
+      "precio_unitario": 40
+    }
+  ],
+  "total_pedido": 8000
+},
+{
+  "_id": "PED-003",
+  "tipo_entidad": "pedido",
+  "numero_orden": "ORD-2026-003",
+  "fecha_emision": "2026-02-24",
+  "fecha_entrega_comprometida": "2026-03-18",
+  "prioridad": "Alta",
+  "estado_actual": "En Corte",
+  "cliente": {
+    "codigo_cliente": "CLI-003",
+    "razon_social": "Confecciones e Importaciones del Pacífico S.A.C.",
+    "persona_contacto": "Valeria Cárdenas"
+  },
+  "detalle_productos": [
+    {
+      "id_producto": "PROD-003",
+      "codigo": "CHA-IMP-03",
+      "nombre": "Chaqueta Impermeable Outdoor",
+      "cantidad": 120,
+      "precio_unitario": 65
+    },
+    {
+      "id_producto": "PROD-001",
+      "codigo": "CAM-OXF-01",
+      "nombre": "Camisa Casual Oxford",
+      "cantidad": 100,
+      "precio_unitario": 25.5
+    }
+  ],
+  "total_pedido": 10350
+},
+{
+  "_id": "PED-004",
+  "tipo_entidad": "pedido",
+  "numero_orden": "ORD-2026-004",
+  "fecha_emision": "2026-02-25",
+  "fecha_entrega_comprometida": "2026-03-20",
+  "prioridad": "Normal",
+  "estado_actual": "Aprobado",
+  "cliente": {
+    "codigo_cliente": "CLI-004",
+    "razon_social": "Distribuciones TextilTex E.I.R.L.",
+    "persona_contacto": "Fernando Silva"
+  },
+  "detalle_productos": [
+    {
+      "id_producto": "PROD-002",
+      "codigo": "PAN-DEN-02",
+      "nombre": "Pantalón Jean Clásico",
+      "cantidad": 150,
+      "precio_unitario": 40
+    }
+  ],
+  "total_pedido": 6000
+},
+{
+  "_id": "PED-005",
+  "tipo_entidad": "pedido",
+  "numero_orden": "ORD-2026-005",
+  "fecha_emision": "2026-02-26",
+  "fecha_entrega_comprometida": "2026-03-25",
+  "prioridad": "Urgente",
+  "estado_actual": "En Confección",
+  "cliente": {
+    "codigo_cliente": "CLI-005",
+    "razon_social": "Global Retail Brands S.A.",
+    "persona_contacto": "Sofía Benítez"
+  },
+  "detalle_productos": [
+    {
+      "id_producto": "PROD-005",
+      "codigo": "VES-LIN-05",
+      "nombre": "Vestido Casual de Lino",
+      "cantidad": 250,
+      "precio_unitario": 48
+    },
+    {
+      "id_producto": "PROD-001",
+      "codigo": "CAM-OXF-01",
+      "nombre": "Camisa Casual Oxford",
+      "cantidad": 300,
+      "precio_unitario": 25.5
+    }
+  ],
+  "total_pedido": 19650
+},
+{
+  "_id": "PED-006",
+  "tipo_entidad": "pedido",
+  "numero_orden": "ORD-2026-006",
+  "fecha_emision": "2026-02-27",
+  "fecha_entrega_comprometida": "2026-03-12",
+  "prioridad": "Alta",
+  "estado_actual": "En Estampado",
+  "cliente": {
+    "codigo_cliente": "CLI-006",
+    "razon_social": "Comercializadora de Ropa Deportiva SportMaster",
+    "persona_contacto": "Andrés Felipe Parra"
+  },
+  "detalle_productos": [
+    {
+      "id_producto": "PROD-004",
+      "codigo": "POL-ALGS-04",
+      "nombre": "Polo Deportivo Jersey",
+      "cantidad": 500,
+      "precio_unitario": 18
+    }
+  ],
+  "total_pedido": 9000
+}]

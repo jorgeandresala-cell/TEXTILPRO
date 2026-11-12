@@ -1,0 +1,65 @@
+[{
+  "_id": "BOD-GENERAL",
+  "tipo_entidad": "bodegas",
+  "empresa": "TextilPro S.A.S.",
+  "fecha_actualizacion": "2026-11-12",
+  "total_bodegas": 3,
+  "bodegas_registradas": [
+    {
+      "codigo_bodega": "BOD-001",
+      "nombre": "Bodega Principal - Sector Textil",
+      "tipo_almacenamiento": "Producto Terminado",
+      "ubicacion": {
+        "ciudad": "Medellín",
+        "direccion": "Zona Industrial Guayabal, Calle 14 # 52-40",
+        "area_m2": 1200
+      },
+      "responsable": {
+        "numero_empleado": "EMP-102",
+        "nombre_completo": "María Gómez",
+        "turno": "Tarde"
+      },
+      "capacidad_maxima_unidades": 10000,
+      "ocupacion_actual_unidades": 4500,
+      "estado": "Operativa",
+      "observaciones_calidad": "Control de humedad y temperatura activo las 24 horas."
+    },
+    {
+      "codigo_bodega": "BOD-002",
+      "nombre": "Bodega de Materias Primas e Insumos",
+      "tipo_almacenamiento": "Telas, Hilados y Avíos",
+      "ubicacion": {
+        "ciudad": "Itagüí",
+        "direccion": "Autopista Sur # 38-120",
+        "area_m2": 850
+      },
+      "responsable": {
+        "numero_empleado": "EMP-103",
+        "nombre_completo": "Jorge Ramírez",
+        "turno": "Mañana"
+      },
+      "capacidad_maxima_unidades": 15000,
+      "ocupacion_actual_unidades": 8200,
+      "estado": "Operativa",
+      "observaciones_calidad": "Estantería reforzada para rollos de tela pesada y denim."
+    },
+    {
+      "codigo_bodega": "BOD-003",
+      "nombre": "Bodega de Despachos y Exportación",
+      "tipo_almacenamiento": "Pedidos Embalados",
+      "ubicacion": {
+        "ciudad": "Envigado",
+        "direccion": "Carrera 48 # 25 Sur - 80",
+        "area_m2": 600
+      },
+      "responsable": {
+        "numero_empleado": "EMP-101",
+        "nombre_completo": "Carlos Pérez",
+        "turno": "Mañana"
+      },
+      "capacidad_maxima_unidades": 5000,
+      "ocupacion_actual_unidades": 1370,
+      "estado": "Operativa"
+    }
+  ]
+}]

@@ -1,0 +1,292 @@
+use TEXTILPRO
+
+
+// Inserción (insertOne y insertMany)
+
+db.empleados.insertOne({
+  "_id": "EMP-007",
+  "tipo_entidad": "empleado",
+  "codigo": "EMP-007",
+  "nombre_completo": "Sofía Marcela Henao",
+  "cargo": "Especialista en Control de Calidad",
+  "departamento": "Calidad",
+  "fecha_ingreso": "2026-03-01",
+  "salario": 2800.00
+});
+
+db.materias_primas.insertMany([
+  {
+    "_id": "MAT-006",
+    "tipo_entidad": "materia_prima",
+    "codigo": "MP- ELAST-01",
+    "descripcion": "Elástico tejido de 2 cm color blanco",
+    "tipo": "Avios y Accesorios",
+    "unidad_medida": "Metros",
+    "proveedor_principal": "YKK del Perú S.A.",
+    "precio_unitario": 0.45,
+    "fecha_registro": "2026-03-02"
+  },
+  {
+    "_id": "MAT-007",
+    "tipo_entidad": "materia_prima",
+    "codigo": "MP-BOT-01",
+    "descripcion": "Botón de corozo natural 18L",
+    "tipo": "Avios y Accesorios",
+    "unidad_medida": "Unidades",
+    "proveedor_principal": "Botones y Acabados S.A.",
+    "precio_unitario": 0.12,
+    "fecha_registro": "2026-03-02"
+  }
+]);
+
+db["ordenes de producción"].insertOne({
+  "_id": "OP-GENERAL",
+  "tipo_entidad": "ordenes_produccion",
+  "empresa": "TextilPro S.A.S.",
+  "fecha_actualizacion": "2026-11-12",
+  "total_ordenes_activas": 2,
+  "ordenes_produccion_registradas": [
+    {
+      "codigo_orden_produccion": "OP-2026-001",
+      "id_pedido_asociado": "PED-001",
+      "numero_orden_cliente": "ORD-2026-001",
+      "cliente": "Modas y Estilos S.A.",
+      "fechas": {
+        "fecha_emision": "2026-02-23",
+        "fecha_inicio_programada": "2026-02-24",
+        "fecha_fin_estimada": "2026-03-05"
+      },
+      "productos_a_fabricar": [
+        {
+          "id_producto": "PROD-001",
+          "codigo": "CAM-OXF-01",
+          "nombre": "Camisa Casual Oxford",
+          "cantidad_requerida": 150
+        }
+      ],
+      "recursos_asignados": {
+        "maquinas_utilizadas": [
+          {
+            "codigo_maquina": "MAQ-001",
+            "tipo": "Plana de Alta Velocidad"
+          }
+        ],
+        "materias_primas_consumidas": [
+          {
+            "codigo_materia_prima": "MP-ALG-01",
+            "descripcion": "Tela Algodón Oxford",
+            "cantidad_usada": 220,
+            "unidad": "Metros"
+          }
+        ],
+        "empleados_responsables": [
+          {
+            "numero_empleado": "EMP-103",
+            "nombre_completo": "Jorge Ramírez",
+            "rol": "Supervisor de Corte y Patronaje"
+          }
+        ]
+      },
+      "estado_produccion": "En Proceso",
+      "porcentaje_avance": 75.0,
+      "observaciones_calidad": "Lote con excelente rendimiento en tejido oxford y cero mermas críticas."
+    },
+    {
+      "codigo_orden_produccion": "OP-2026-003",
+      "id_pedido_asociado": "PED-003",
+      "numero_orden_cliente": "ORD-2026-003",
+      "cliente": "Confecciones e Importaciones del Pacífico S.A.C.",
+      "fechas": {
+        "fecha_emision": "2026-02-25",
+        "fecha_inicio_programada": "2026-02-26",
+        "fecha_fin_estimada": "2026-03-12"
+      },
+      "productos_a_fabricar": [
+        {
+          "id_producto": "PROD-003",
+          "codigo": "CHA-IMP-03",
+          "nombre": "Chaqueta Impermeable Outdoor",
+          "cantidad_requerida": 120
+        }
+      ],
+      "recursos_asignados": {
+        "maquinas_utilizadas": [
+          {
+            "codigo_maquina": "MAQ-005",
+            "tipo": "Fusionadora de Entretelas"
+          }
+        ],
+        "materias_primas_consumidas": [
+          {
+            "codigo_materia_prima": "MP-POL-02",
+            "descripcion": "Tela Poliéster Impermeable",
+            "cantidad_usada": 300,
+            "unidad": "Metros"
+          }
+        ],
+        "empleados_responsables": [
+          {
+            "numero_empleado": "EMP-104",
+            "nombre_completo": "Ana Torres",
+            "rol": "Especialista en Sellado y Acabados"
+          }
+        ]
+      },
+      "estado_produccion": "En Corte",
+      "porcentaje_avance": 30.0
+      // Nota: Esta segunda orden no tiene "observaciones_calidad" a propósito
+    }
+  ]
+});
+
+
+// Modificación de un documento
+
+db.productos.updateOne(
+  { "_id": "PROD-005" },
+  {
+    $set: {
+      "precio_objetivo": 52.50,
+      "categoria": "Indumentaria Femenina de Lujo"
+    }
+  }
+);
+
+// Modificación múltiple
+
+
+db.pedidos.updateMany(
+  { "prioridad": "Alta" },
+  {
+    $set: { "estado_actual": "Prioridad en Fábrica" }
+  }
+);
+
+// adicion a un arreglo
+
+db.productos.updateOne(
+  { "_id": "PROD-005" },
+  {
+    $push: { "detalles_fisicos.colores": "Azul Acero" }
+  }
+);
+
+// Paso 1: Contar documentos que cumplen el filtro (ej. pedidos cancelados o finalizados antiguos):
+
+db.pedidos.countDocuments({ "estado_actual": "Cancelado" });
+
+db.pedidos.deleteMany({ "estado_actual": "Cancelado" });
+
+// buscar clientes
+
+db.empleados.find({ "_id": "EMP-007" })
+
+// Consulta: Filtrar productos con precio objetivo mayor a 25.00 ordenados de forma descendente
+db.productos.find(
+  { "precio_objetivo": { $gt: 25.00 } }
+).sort(
+  { "precio_objetivo": -1 }
+);
+
+// Consulta: Buscar órdenes de producción que no tienen el campo observaciones_calidad usando $exists
+db["ordenes de producción"].find({
+  "ordenes_produccion_registradas": {
+    $elemMatch: { "observaciones_calidad": { $exists: false } }
+  }
+});
+
+// consultas generales
+db.getCollectionNames()
+
+// Consulta: Filtrar pedidos con prioridad Alta y estados específicos en proceso
+db.pedidos.find({
+  "prioridad": "Alta",
+  "estado_actual": { $in: ["En Producción", "En Estampado", "En Corte", "Prioridad en Fábrica"] }
+});
+
+// Consulta: Filtrar productos con precio objetivo mayor a 25.00 ordenados de forma descendente
+db.productos.find(
+  { "precio_objetivo": { $gt: 25.00 } }
+).sort(
+  { "precio_objetivo": -1 }
+);
+
+// Consulta: Filtrar pedidos con prioridad Alta y estados específicos en proceso
+db.pedidos.find({
+  "prioridad": "Alta",
+  "estado_actual": { $in: ["En Producción", "En Estampado", "En Corte", "Prioridad en Fábrica"] }
+});
+
+// despachos
+db["despachos y logistica"].find();
+
+db["despachos y logistica"].find({}, { "cliente.destino_ciudad": 1 });
+
+db["despachos y logistica"].find({
+  "despachos_registrados": {
+    $elemMatch: { "cliente.destino_ciudad": "Bogotá" }
+  }
+});
+
+// consultas TEXTILPRO
+
+db["lotes"].find({
+  "lotes_registrados": {
+    $elemMatch: {
+      "cantidad_unidades": { $gt: 1000 },
+      $or: [
+        { "material_principal": { $regex: /algodón/i } },
+        { "material_principal": { $regex: /lino/i } }
+      ]
+    }
+  }
+});
+
+db["lotes"].find({
+  "lotes_registrados": {
+    $elemMatch: {
+      "turno": "Mañana",
+      "estado_lote": "Terminado"
+    }
+  }
+});
+
+db["lotes"].aggregate([
+  { $unwind: "$lotes_registrados" },
+  { $unwind: "$lotes_registrados.pruebas_resistencia" },
+  {
+    $match: {
+      $expr: {
+        $lt: [
+          "$lotes_registrados.pruebas_resistencia.resultado_obtenido",
+          "$lotes_registrados.pruebas_resistencia.minimo_exigido"
+        ]
+      }
+    }
+  }
+]);
+
+db["lotes"].find({
+  "lotes_registrados": {
+    $elemMatch: {
+      $or: [
+        { "pruebas_calidad": { $exists: false } },
+        { "pruebas_calidad": { $size: 0 } }
+      ]
+    }
+  }
+});
+
+db["lotes"].aggregate([
+  { $unwind: "$lotes_registrados" },
+  { $sort: { "lotes_registrados.porcentaje_desperdicio": -1 } },
+  { $limit: 5 },
+  {
+    $project: {
+      _id: 0,
+      codigo_lote: "$lotes_registrados.codigo_lote",
+      nombre_producto: "$lotes_registrados.nombre_producto",
+      porcentaje_desperdicio: "$lotes_registrados.porcentaje_desperdicio"
+    }
+  }
+]);

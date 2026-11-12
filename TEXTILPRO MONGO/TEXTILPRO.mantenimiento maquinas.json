@@ -1,0 +1,108 @@
+[{
+  "_id": "MANT-GENERAL",
+  "tipo_entidad": "mantenimiento_maquinas",
+  "empresa": "TextilPro S.A.S.",
+  "fecha_actualizacion": "2026-11-12",
+  "total_registros_mantenimiento": 4,
+  "registros_mantenimiento": [
+    {
+      "codigo_mantenimiento": "MANT-2026-001",
+      "codigo_maquina": "MAQ-001",
+      "nombre_maquina": "Plana de Alta Velocidad",
+      "tipo_mantenimiento": "Preventivo",
+      "fechas": {
+        "fecha_programada": "2026-01-15",
+        "fecha_ejecucion": "2026-01-15"
+      },
+      "tecnico_responsable": {
+        "numero_empleado": "EMP-103",
+        "nombre_completo": "Jorge Ramírez"
+      },
+      "descripcion_trabajo": "Limpieza general de componentes internos, lubricación de ejes principales y calibración de tensión del hilo.",
+      "repuestos_utilizados": [
+        {
+          "codigo_repuesto": "REP-ACE-01",
+          "nombre": "Aceite lubricante industrial ISO VG 32",
+          "cantidad": 1,
+          "unidad": "Litro"
+        },
+        {
+          "codigo_repuesto": "REP-AGU-02",
+          "nombre": "Agujas DBx1 #14",
+          "cantidad": 5,
+          "unidad": "Unidades"
+        }
+      ],
+      "costo_mantenimiento": 45.5,
+      "estado": "Completado"
+    },
+    {
+      "codigo_mantenimiento": "MANT-2026-002",
+      "codigo_maquina": "MAQ-003",
+      "nombre_maquina": "Remalladora 5 Hilos de Alta Velocidad",
+      "tipo_mantenimiento": "Preventivo",
+      "fechas": {
+        "fecha_programada": "2026-01-22",
+        "fecha_ejecucion": "2026-01-22"
+      },
+      "tecnico_responsable": {
+        "numero_empleado": "EMP-103",
+        "nombre_completo": "Jorge Ramírez"
+      },
+      "descripcion_trabajo": "Ajuste de lanzaderas, revisión de cuchillas de corte y limpieza de acumulaciones de pelusa.",
+      "repuestos_utilizados": [
+        {
+          "codigo_repuesto": "REP-CUC-01",
+          "nombre": "Cuchilla superior e inferior para remalladora",
+          "cantidad": 1,
+          "unidad": "Juego"
+        }
+      ],
+      "costo_mantenimiento": 68,
+      "estado": "Completado"
+    },
+    {
+      "codigo_mantenimiento": "MANT-2026-003",
+      "codigo_maquina": "MAQ-004",
+      "nombre_maquina": "Bordadora Computarizada de 6 Cabezales",
+      "tipo_mantenimiento": "Preventivo",
+      "fechas": {
+        "fecha_programada": "2026-02-01",
+        "fecha_ejecucion": "2026-02-01"
+      },
+      "tecnico_responsable": {
+        "numero_empleado": "EMP-105",
+        "nombre_completo": "Luis Mendoza"
+      },
+      "descripcion_trabajo": "Actualización de firmware de panel de control, sincronización de cabezales y engrase de rieles de pantógrafo.",
+      "repuestos_utilizados": [],
+      "costo_mantenimiento": 120,
+      "estado": "Completado"
+    },
+    {
+      "codigo_mantenimiento": "MANT-2026-004",
+      "codigo_maquina": "MAQ-002",
+      "nombre_maquina": "Recubridora Industrial",
+      "tipo_mantenimiento": "Correctivo",
+      "fechas": {
+        "fecha_programada": "2026-02-10",
+        "fecha_ejecucion": "2026-02-10"
+      },
+      "tecnico_responsable": {
+        "numero_empleado": "EMP-106",
+        "nombre_completo": "Rosa Vargas"
+      },
+      "descripcion_trabajo": "Reparación de motor por sobrecalentamiento intermitente y reemplazo de correa de transmisión.",
+      "repuestos_utilizados": [
+        {
+          "codigo_repuesto": "REP-COR-03",
+          "nombre": "Correa dentada de transmisión M-45",
+          "cantidad": 1,
+          "unidad": "Unidad"
+        }
+      ],
+      "costo_mantenimiento": 150.25,
+      "estado": "Completado"
+    }
+  ]
+}]

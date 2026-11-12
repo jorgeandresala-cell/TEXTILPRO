@@ -1,0 +1,163 @@
+[{
+  "_id": "OP-GENERAL",
+  "tipo_entidad": "ordenes_produccion",
+  "empresa": "TextilPro S.A.S.",
+  "fecha_actualizacion": "2026-11-12",
+  "total_ordenes_activas": 3,
+  "ordenes_produccion_registradas": [
+    {
+      "codigo_orden_produccion": "OP-2026-001",
+      "id_pedido_asociado": "PED-001",
+      "numero_orden_cliente": "ORD-2026-001",
+      "cliente": "Modas y Estilos S.A.",
+      "fechas": {
+        "fecha_emision": "2026-02-23",
+        "fecha_inicio_programada": "2026-02-24",
+        "fecha_fin_estimada": "2026-03-05"
+      },
+      "productos_a_fabricar": [
+        {
+          "id_producto": "PROD-001",
+          "codigo": "CAM-OXF-01",
+          "nombre": "Camisa Casual Oxford",
+          "cantidad_requerida": 150
+        },
+        {
+          "id_producto": "PROD-005",
+          "codigo": "VES-LIN-05",
+          "nombre": "Vestido Casual de Lino",
+          "cantidad_requerida": 80
+        }
+      ],
+      "recursos_asignados": {
+        "maquinas_utilizadas": [
+          {
+            "codigo_maquina": "MAQ-001",
+            "tipo": "Plana de Alta Velocidad"
+          },
+          {
+            "codigo_maquina": "MAQ-003",
+            "tipo": "Remalladora 5 Hilos"
+          }
+        ],
+        "materias_primas_consumidas": [
+          {
+            "codigo_materia_prima": "MP-ALG-01",
+            "descripcion": "Tela Algodón Oxford",
+            "cantidad_usada": 220,
+            "unidad": "Metros"
+          },
+          {
+            "codigo_materia_prima": "MP-ZIP-01",
+            "descripcion": "Cierre Metálico de 20cm",
+            "cantidad_usada": 80,
+            "unidad": "Unidades"
+          }
+        ],
+        "empleados_responsables": [
+          {
+            "numero_empleado": "EMP-103",
+            "nombre_completo": "Jorge Ramírez",
+            "rol": "Supervisor de Corte y Patronaje"
+          },
+          {
+            "numero_empleado": "EMP-104",
+            "nombre_completo": "Ana Torres",
+            "rol": "Operaria de Confección"
+          }
+        ]
+      },
+      "estado_produccion": "En Proceso",
+      "porcentaje_avance": 75,
+      "observaciones_calidad": "Lote con excelente rendimiento en tejido oxford y cero mermas críticas."
+    },
+    {
+      "codigo_orden_produccion": "OP-2026-003",
+      "id_pedido_asociado": "PED-003",
+      "numero_orden_cliente": "ORD-2026-003",
+      "cliente": "Confecciones e Importaciones del Pacífico S.A.C.",
+      "fechas": {
+        "fecha_emision": "2026-02-25",
+        "fecha_inicio_programada": "2026-02-26",
+        "fecha_fin_estimada": "2026-03-12"
+      },
+      "productos_a_fabricar": [
+        {
+          "id_producto": "PROD-003",
+          "codigo": "CHA-IMP-03",
+          "nombre": "Chaqueta Impermeable Outdoor",
+          "cantidad_requerida": 120
+        }
+      ],
+      "recursos_asignados": {
+        "maquinas_utilizadas": [
+          {
+            "codigo_maquina": "MAQ-005",
+            "tipo": "Fusionadora de Entretelas"
+          }
+        ],
+        "materias_primas_consumidas": [
+          {
+            "codigo_materia_prima": "MP-POL-02",
+            "descripcion": "Tela Poliéster Impermeable",
+            "cantidad_usada": 300,
+            "unidad": "Metros"
+          }
+        ],
+        "empleados_responsables": [
+          {
+            "numero_empleado": "EMP-104",
+            "nombre_completo": "Ana Torres",
+            "rol": "Especialista en Sellado y Acabados"
+          }
+        ]
+      },
+      "estado_produccion": "En Corte",
+      "porcentaje_avance": 30
+    },
+    {
+      "codigo_orden_produccion": "OP-2026-005",
+      "id_pedido_asociado": "PED-005",
+      "numero_orden_cliente": "ORD-2026-005",
+      "cliente": "Global Retail Brands S.A.",
+      "fechas": {
+        "fecha_emision": "2026-02-27",
+        "fecha_inicio_programada": "2026-03-01",
+        "fecha_fin_estimada": "2026-03-20"
+      },
+      "productos_a_fabricar": [
+        {
+          "id_producto": "PROD-005",
+          "codigo": "VES-LIN-05",
+          "nombre": "Vestido Casual de Lino",
+          "cantidad_requerida": 250
+        }
+      ],
+      "recursos_asignados": {
+        "maquinas_utilizadas": [
+          {
+            "codigo_maquina": "MAQ-001",
+            "tipo": "Plana de Alta Velocidad"
+          }
+        ],
+        "materias_primas_consumidas": [
+          {
+            "codigo_materia_prima": "MP-LIN-01",
+            "descripcion": "Lino Natural",
+            "cantidad_usada": 550,
+            "unidad": "Metros"
+          }
+        ],
+        "empleados_responsables": [
+          {
+            "numero_empleado": "EMP-106",
+            "nombre_completo": "Rosa Vargas",
+            "rol": "Supervisora de Tejeduría"
+          }
+        ]
+      },
+      "estado_produccion": "Programada",
+      "porcentaje_avance": 0
+    }
+  ]
+}]
