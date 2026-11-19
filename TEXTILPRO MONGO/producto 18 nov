@@ -1,0 +1,136 @@
+db.lotes.aggregate([
+  {
+    $group: {
+      _id: {
+        producto: "$producto_id",
+        anio: { $year: "$fecha" },
+        mes: { $month: "$fecha" }
+      },
+      total_unidades_producidas: { $sum: "$cantidad" }
+    }
+  },
+  {
+    $lookup: {
+      from: "productos",
+      localField: "_id.producto",
+      foreignField: "_id",
+      as: "info_producto"
+    }
+  },
+  {
+    $unwind: "$info_producto"
+  },
+  {
+    $project: {
+      _id: 0,
+      producto: "$info_producto.nombre",
+      anio: "$_id.anio",
+      mes: "$_id.mes",
+      total_unidades_producidas: 1
+    }
+  },
+  {
+    $sort: { anio: 1, mes: 1, producto: 1 }
+  }
+])
+
+db.lotes.aggregate([
+  {
+    $unwind: "$consumo_materias"
+  },
+  {
+    $group: {
+      _id: "$consumo_materias.materia_prima_id",
+      consumo_total: { $sum: "$consumo_materias.cantidad_usada" }
+    }
+  },
+  {
+    $lookup: {
+      from: "materias_primas",
+      localField: "_id",
+      foreignField: "_id",
+      as: "detalle_materia"
+    }
+  },
+  {
+    $unwind: "$detalle_materia"
+  },
+  {
+    $project: {
+      _id: 0,
+      materia_prima_id: "$_id",
+      nombre: "$detalle_materia.nombre",
+      unidad_medida: "$detalle_materia.unidad_medida",
+      consumo_total: 1
+    }
+  }
+])
+
+db.lotes.aggregate([
+  {
+    $lookup: {
+      from: "productos",
+      localField: "producto_id",
+      foreignField: "_id",
+      as: "producto_info"
+    }
+  },
+  {
+    $unwind: "$producto_info"
+  },
+  {
+    $project: {
+      lote_id: "$_id",
+      fecha: 1,
+      cantidad: 1,
+      producto: "$producto_info.nombre",
+      categoria: "$producto_info.categoria",
+      _id: 0
+    }
+  }
+])
+
+db.runCommand({
+  collMod: "lotes",
+  validator: {
+    $jsonSchema: {
+      bsonType: "object",
+      required: ["producto_id", "fecha", "cantidad"],
+      properties: {
+        producto_id: {
+          description: "El ID del producto es obligatorio"
+        },
+        fecha: {
+          bsonType: "date",
+          description: "La fecha es obligatoria y debe ser de tipo Date"
+        },
+        cantidad: {
+          bsonType: "int",
+          minimum: 1,
+          description: "La cantidad es obligatoria y debe ser un entero mayor que cero"
+        }
+      }
+    }
+  }
+})
+
+db.runCommand({
+  collMod: "materias_primas",
+  validator: {
+    $jsonSchema: {
+      bsonType: "object",
+      required: ["nombre", "unidad_medida", "stock"],
+      properties: {
+        unidad_medida: {
+          enum: ["kilo", "metro", "rollo"],
+          description: "La unidad de medida solo puede ser: kilo, metro o rollo"
+        },
+        stock: {
+          bsonType: ["int", "double"],
+          minimum: 0,
+          description: "El stock debe ser un número mayor o igual a 0"
+        }
+      }
+    }
+  }
+})
